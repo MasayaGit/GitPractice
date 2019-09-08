@@ -1,0 +1,47 @@
+fork練習
+https://github.com/elmas3/pull-request-practice
+
+forkする
+
+MasayaGit/pull-request-practiceができる
+
+MasayaGit/pull-request-practiceにてブランチを切る。
+
+切ったブランチに対して、ファイルの編集を行う。
+
+ファイルの編集後ブランチからpull requestを送る。
+
+この時、元はhttps://github.com/elmas3/pull-request-practiceに対して、pull request送るようになっているが、MasayaGit/pull-request-practiceのmasterにすることも可能。
+
+MasayaGit/pull-request-practiceのmasterにてmergeした後にmasterをpull requestすればいい
+
+mergeしたくない場合はcloseする
+
+
+
+ターミナルでやる場合
+
+Githubにてfork
+
+git clone https://github.com/MasayaGit/pull-request-practice.git
+
+git branch addMytxt
+
+touch masaya.txt
+
+vim masaya.txt
+
+git add .
+
+git status
+
+git commit ./ -m  'addMyFile'
+
+git checkout master
+
+git push -u origin addMytxt
+
+pull requestをGithubにて行う。
+
+自分のmasterに対してpull requestを行った場合は自分でmergeして、その後、自分のmasterをfork先にpull requestを送る
+
