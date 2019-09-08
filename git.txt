@@ -13,38 +13,11 @@ git push -u origin master
 
 
 
-DS_Storeをアップしてしまった時
-
-https://qiita.com/takashimelon/items/def769aaaa1d41cc44d4
-
-cd でアップしたディレクトリにいく
-提出した際に行ったgit initによるファイルが残っている状態で行うと思う。なかったらgit init すればいい
-
-touch .gitignore
-
-vim .gitignore 
-
-ここで.DS_Storeと記入
-
-git rm -r --cached .
-
-git add .
-
-git commit -m "create　.gitignore"
-
-git push origin master
-
-
-
-下で確認する
-
-git勉強
-http://blog.higty.xyz/git/05_branch_git/
-https://backlog.com/ja/git-tutorial/intro/01/
 
 
 フォークした場合はforkに対して、pushし、その後にpullrequest(Github上の「New pull request」っていう緑のボタンから)を送る
 
+フォークしなかった場合でも、ブランチをpushすればpullrequestになる。
 
 
 git branch ブランチ名
@@ -67,27 +40,45 @@ git checkout master
 git push -u origin ブランチ名
 
 
+Github上でpull requestできるようになっている。
+
 git mergeはブラウザででる。
 
 git statusで確認
 
 赤がコミット前で変更したファイル
-
-git addでコミット後
-git statusで確認
 緑がコミット後で変更したファイルになっている
-
 git commitでブランチの中での提出
 git statusで確認
 cleanになっている。
 
 提出したくなったらcheckout masterでマスターに移動して、pushでリモートに反映。
 
+誰かが加えた変更を取り入れるときはgit pull
 git cloneはinit と　pullを一緒にやってくれる
-
-つまり、誰かが加えた変更を取り入れるときはgit pull
  
 
 
- 
+DS_Storeをアップしてしまった時
+
+https://qiita.com/takashimelon/items/def769aaaa1d41cc44d4
+
+cd でアップしたディレクトリにいく
+提出した際に行ったgit initによるファイルが残っている状態で行うと思う。なかったらgit init すればいい
+
+touch .gitignore
+
+vim .gitignore 
+
+ここで.DS_Storeと記入
+
+git rm -r --cached .
+
+git add .
+
+git commit -m "create　.gitignore"
+
+git checkout master
+
+git push -u origin ブランチ名
 
