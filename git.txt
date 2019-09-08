@@ -1,0 +1,113 @@
+  最初   Github公式のadd READMEはしない　. でaddする
+  510 cd gitにあげるディレクトリ
+  510   git init
+
+  511  git add .
+
+  512  git commit -m "Initial Commit"
+
+  513   git remote add origin https://github.com/MasayaGit/MakeTweet.git
+
+  514  git push -u origin master
+
+
+
+    cd ~/git/Note/ 提出するディレクトリに移動
+
+    git checkout master
+
+    **注意** git pull （これは作成したプログラムがあれば、先に提出して、その後にやる）これはgithubにあるのと同じ状態にするやつだと思う
+
+    git checkout -b SingouAdd  ブランチ名
+
+    git add .
+
+    git commit -am "create singouAdd"  githubに表示するやった内容をここで書く
+
+    git push -u origin SingouAdd
+
+
+
+
+DS_Storeをアップしてしまった時
+
+https://qiita.com/takashimelon/items/def769aaaa1d41cc44d4
+
+  cd でアップしたディレクトリにいく
+提出した際に行ったgit initによるファイルが残っている状態で行うと思う。なかったらgit init すればいいと思う（多分）
+  521  touch .gitignore
+
+  522  vim .gitignore 
+
+ここで.DS_Storeと記入
+
+  523  git rm -r --cached .
+
+  524  git add .
+
+//この下にある.gitignoreが提出した際のgitファイル名?になると思う。
+
+  525  git commit -m "create　.gitignore"
+
+  526  git push origin master
+
+
+
+下で確認する
+
+
+git勉強
+http://blog.higty.xyz/git/05_branch_git/
+https://backlog.com/ja/git-tutorial/intro/01/
+
+
+フォークした場合はforkに対して、pushし、その後にpullrequest(Github上の「New pull request」っていう緑のボタンから)を送る
+
+
+
+git branch ブランチ名
+
+ここではまだmasterにいる
+
+git checkout ブランチ名
+
+これで移動 *がついているところが現在いるところ
+
+
+’develop’ブランチにいる状態でファイルを適当に編集・コミット
+
+git commit ./ -m 'branch test'
+
+一旦マスターに戻ってみます。ブランチの移動はgit checkout
+
+git checkout master
+
+
+
+git push -u origin ブランチ名
+
+
+git mergeはブラウザででる。
+
+git statusで確認
+
+赤がコミット前で変更したファイル
+
+git addでコミット後
+git statusで確認
+緑がコミット後で変更したファイルになっている
+
+git commitでブランチの中での提出
+git statusで確認
+cleanになっている。
+
+提出したくなったらcheckout masterでマスターに移動して、pushでリモートに反映。
+
+git cloneはinit と　pullを一緒にやってくれる
+
+つまり、誰かが加えた変更を取り入れるときはgit pull
+ 
+
+
+ 
+
