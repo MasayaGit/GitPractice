@@ -84,3 +84,7 @@ git checkout master
 
 git push -u origin ブランチ名
 
+
+conflictした場合
+Githubでマージする前に修正作業を行う。Github上でファイル編集行うことができる
+
