@@ -14,11 +14,10 @@ git push -u origin master
 
 
 
-
-フォークした場合はforkに対して、pushし、その後にpullrequest(Github上の「New pull request」っていう緑のボタンから)を送る
+フォークした場合はforkに対して、pushし、その後にpullrequest(Github上の「New pull request」っていうボタンから)を送る
 
 フォークしなかった場合でも、ブランチをpushすればpullrequestになる。
-
+Github上でもブランチでリモートに反映されていない(Github上でブランチを切ったもの)のをNew pull requestから選択すれば、pushせずとも、pull requesされる
 
 git branch ブランチ名
 
