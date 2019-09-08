@@ -1,4 +1,4 @@
-最初   Github公式のadd READMEはしない　. でaddする
+最初  Github公式のadd READMEはしない　. でaddする
 cd gitにあげるディレクトリに移動
 
 git init
