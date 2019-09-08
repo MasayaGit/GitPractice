@@ -1,31 +1,15 @@
-  最初   Github公式のadd READMEはしない　. でaddする
-  510 cd gitにあげるディレクトリ
-  510   git init
+最初   Github公式のadd READMEはしない　. でaddする
+cd gitにあげるディレクトリに移動
 
-  511  git add .
+git init
 
-  512  git commit -m "Initial Commit"
+git add .
 
-  513   git remote add origin https://github.com/MasayaGit/MakeTweet.git
+git commit -m "Initial Commit"
 
-  514  git push -u origin master
+git remote add origin https://github.com/MasayaGit/MakeTweet.git
 
-
-
-    cd ~/git/Note/ 提出するディレクトリに移動
-
-    git checkout master
-
-    **注意** git pull （これは作成したプログラムがあれば、先に提出して、その後にやる）これはgithubにあるのと同じ状態にするやつだと思う
-
-    git checkout -b SingouAdd  ブランチ名
-
-    git add .
-
-    git commit -am "create singouAdd"  githubに表示するやった内容をここで書く
-
-    git push -u origin SingouAdd
-
+git push -u origin master
 
 
 
@@ -33,28 +17,26 @@ DS_Storeをアップしてしまった時
 
 https://qiita.com/takashimelon/items/def769aaaa1d41cc44d4
 
-  cd でアップしたディレクトリにいく
-提出した際に行ったgit initによるファイルが残っている状態で行うと思う。なかったらgit init すればいいと思う（多分）
-  521  touch .gitignore
+cd でアップしたディレクトリにいく
+提出した際に行ったgit initによるファイルが残っている状態で行うと思う。なかったらgit init すればいい
 
-  522  vim .gitignore 
+touch .gitignore
+
+vim .gitignore 
 
 ここで.DS_Storeと記入
 
-  523  git rm -r --cached .
+git rm -r --cached .
 
-  524  git add .
+git add .
 
-//この下にある.gitignoreが提出した際のgitファイル名?になると思う。
+git commit -m "create　.gitignore"
 
-  525  git commit -m "create　.gitignore"
-
-  526  git push origin master
+git push origin master
 
 
 
 下で確認する
-
 
 git勉強
 http://blog.higty.xyz/git/05_branch_git/
@@ -81,8 +63,6 @@ git commit ./ -m 'branch test'
 一旦マスターに戻ってみます。ブランチの移動はgit checkout
 
 git checkout master
-
-
 
 git push -u origin ブランチ名
 
