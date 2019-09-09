@@ -9,6 +9,5 @@ git reset ファイルパス　//２回目以降のaddを取り消す。
 
 
 git checkout master //masterに移動
-
 git pull origin master //origin(Githubの方。ローカルではない方)上のmasterブランチを、現在チェックアウトしているブランチ（= master）に取り込む
 
