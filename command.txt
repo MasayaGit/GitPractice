@@ -15,7 +15,6 @@ git pull origin pullしたいリモートブランチ名:ローカルブラン�
 git pull origin pages:branchtest //リモートにあるpagesというブランチをローカルのbranchtestというブランチに持ってきたいときはこうする
 
 
-git checkout のパラメータに、コミットとパス（ファイル名）を指定すれば、作業ツリーにファイルを展開するコマンドとして動作する。
-これはgit checkout ブランチ名とは異なる動作をする
+git checkoutで過去のコミットに戻って新規ブランチを作成。作業をやり直すことができる。
 git checkout -b  新しいブランチ名 204f81152ca6f3cccadbe1c6774c12824026ead7(コミットハッシュ。これはGithubのコミットから確認できる)
-
+これはgit checkout ブランチ名とは異なる動作をする
