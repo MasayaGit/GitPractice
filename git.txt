@@ -80,6 +80,8 @@ vim .gitignore
 
 ここで.DS_Storeと記入
 
+既に管理対象に追加されているためそのままだと.gitignoreされないので、git rmを行う
+
 git rm -r --cached .
 
 git add .
