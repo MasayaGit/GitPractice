@@ -17,4 +17,5 @@ git pull origin pages:branchtest //リモートにあるpagesというブラン�
 
 git checkout のパラメータに、コミットとパス（ファイル名）を指定すれば、作業ツリーにファイルを展開するコマンドとして動作する。
 これはgit checkout ブランチ名とは異なる動作をする
+git checkout -b  新しいブランチ名 204f81152ca6f3cccadbe1c6774c12824026ead7(コミットハッシュ。これはGithubのコミットから確認できる)
 
