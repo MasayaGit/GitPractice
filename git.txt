@@ -96,3 +96,12 @@ git push -u origin ブランチ名
 conflictした場合
 Githubでマージする前に修正作業を行う。Github上でファイル編集行うことができる
 
+
+
+リモートのブランチ移動
+http://www-creators.com/archives/1388
+
+fetchして
+checkoutでそのブランチに移動。多分この時にremotes/originという言葉はいらない
+リモートぼ
+
