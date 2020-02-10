@@ -115,3 +115,13 @@ checkoutでそのブランチに移動。多分この時にremotes/originとい�
 いつも通りのように修正した内容を作業ブランチにコミットしてpushする
 
 GitHub上でプルリクをmergeできるようになっている
+
+
+git commitメッセージ変更
+https://help.github.com/ja/github/committing-changes-to-your-project/changing-a-commit-message
+
+git commit --amend
+
+名前変更
+
+git push --force origin branch_name
