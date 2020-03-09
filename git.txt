@@ -101,10 +101,10 @@ Githubでマージする前に修正作業を行う。Github上でファイル�
 リモートのブランチ移動
 http://www-creators.com/archives/1388
 
-
 fetchして
 git branch -a
-checkoutでそのブランチに移動。多分この時にremotes/originという言葉はいらない
+git checkout -b test origin/test
+
 
 
 コンフリクト修正
