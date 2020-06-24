@@ -125,3 +125,7 @@ git commit --amend
 名前変更
 
 git push --force origin branch_name
+
+
+リモートコミット取り消し
+https://awesome-linus.com/2019/03/09/git-push-by-mistake/
