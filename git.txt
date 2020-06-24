@@ -127,5 +127,5 @@ git commit --amend
 git push --force origin branch_name
 
 
-リモートコミット取り消し
+リモートコミット取り消し コミットした内容は消えるので、ローカルでコピーなどをしてから作業を行うのが安全
 https://awesome-linus.com/2019/03/09/git-push-by-mistake/
